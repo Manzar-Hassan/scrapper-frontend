@@ -41,7 +41,8 @@ const App = () => {
         </thead>
         <tbody>
           {isLoading
-            ? "Please wait...  "
+            ? 
+            <tr><td colspan={15}>Please wait...</td></tr>   
             : scrappedData
             ? scrappedData.map((data, index) => (
                 <tr key={index}>
